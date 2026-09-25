@@ -4,6 +4,13 @@ ReleaseProof is a GenLayer dApp that creates content-addressed attestations abou
 
 It does not claim that those documents are true, that a release is secure, or that it complies with law. The positive outcome is deliberately named `DISCLOSURE_COMPLETE`, not `COMPLIANT`.
 
+## Live deployment
+
+- Frontend: https://releaseproof.pages.dev
+- StudioNet contract: https://explorer-studio.genlayer.com/address/0x69310D0B876F47007eafFCB57B3a8DB0c884E3a5
+- Finalized E2E transactions: [`verification/LIVE_RESULTS.md`](verification/LIVE_RESULTS.md)
+- Machine-readable readback journal: [`verification/live-0x69310d0b876f47007eaffcb57b3a8db0c884e3a5.json`](verification/live-0x69310d0b876f47007eaffcb57b3a8db0c884e3a5.json)
+
 ## Mechanism
 
 ```text
