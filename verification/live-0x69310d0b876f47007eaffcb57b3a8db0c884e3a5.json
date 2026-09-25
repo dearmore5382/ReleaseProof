@@ -1,0 +1,198 @@
+{
+  "contract": "0x69310D0B876F47007eafFCB57B3a8DB0c884E3a5",
+  "network": "StudioNet",
+  "source_sha256": "1ecde51471c0a6f5c0273c820a81370859444581e044f070094acefb72973b0a",
+  "source": {
+    "owner": "facebook",
+    "repository": "react",
+    "commit": "d083ec1da1e5252abd3ddfdde6dfbc09701a2c51",
+    "manifest": [
+      {
+        "bytes": 1088,
+        "path": "LICENSE",
+        "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+      },
+      {
+        "bytes": 400,
+        "path": "SECURITY.md",
+        "sha256": "c0754b9a49717d9c1f6993f5a26731176259bdf20f5753a663376e5b7c25f752"
+      },
+      {
+        "bytes": 5317,
+        "path": "README.md",
+        "sha256": "4d20edc8d043718c1459dd5d5e25777a282cc09092ecab0f9cc7559f0eac9842"
+      }
+    ],
+    "manifest_sha256": "c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7"
+  },
+  "wallets": {
+    "submitter": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+    "auditor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE"
+  },
+  "started_at": "2026-09-25T08:05:28.725062+00:00",
+  "steps": [
+    {
+      "id": "F1-mutable-ref",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "register_bundle",
+      "hash": "0xf5582fff91d057bc496c76f3569bc3e07401a62b4bec4cf4439bb5d08686254a",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xf5582fff91d057bc496c76f3569bc3e07401a62b4bec4cf4439bb5d08686254a",
+      "return": "INVALID_RELEASE_IDENTITY",
+      "state_after": "NO_POSITIVE_STATE",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "F2-manifest-mismatch",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "register_bundle",
+      "hash": "0x4e82cb3d245fc329ca3c495a5e2f37429321e4ddf86b604eef0038499728b98d",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x4e82cb3d245fc329ca3c495a5e2f37429321e4ddf86b604eef0038499728b98d",
+      "return": "MANIFEST_DIGEST_MISMATCH",
+      "state_after": "NO_POSITIVE_STATE",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "H1-register",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "register_bundle",
+      "hash": "0xbc996f5eb35f77e0c47a12d50ea2ed5f0fe015748e417b3e195d52f45e9ffb4f",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xbc996f5eb35f77e0c47a12d50ea2ed5f0fe015748e417b3e195d52f45e9ffb4f",
+      "return": "0",
+      "state_after": "{\"assessor\": \"\", \"attestation_id\": \"\", \"bundle_id\": \"0\", \"commit\": \"d083ec1da1e5252abd3ddfdde6dfbc09701a2c51\", \"fingerprint\": \"a6fb00abba0def12b3aa2db24a9f836f0932a194d63ac5d158c0dee0233a1319\", \"manifest_sha256\": \"c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7\", \"outcome\": \"UNASSESSED\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [], \"status\": \"REGISTERED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-live\"}",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "F3-duplicate",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "register_bundle",
+      "hash": "0x1d9e2c487be90ca8d6af02f2c51c555db27136fc565172983b17d967f66696f7",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x1d9e2c487be90ca8d6af02f2c51c555db27136fc565172983b17d967f66696f7",
+      "return": "BUNDLE_ALREADY_REGISTERED",
+      "state_after": "{\"assessor\": \"\", \"attestation_id\": \"\", \"bundle_id\": \"0\", \"commit\": \"d083ec1da1e5252abd3ddfdde6dfbc09701a2c51\", \"fingerprint\": \"a6fb00abba0def12b3aa2db24a9f836f0932a194d63ac5d158c0dee0233a1319\", \"manifest_sha256\": \"c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7\", \"outcome\": \"UNASSESSED\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [], \"status\": \"REGISTERED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-live\"}",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "A1-self-assess",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "assess_bundle",
+      "hash": "0xf40a1f606082d3db90a5aba7368e34ed6cb57f0f175e414aeb65f2409ae9d24f",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xf40a1f606082d3db90a5aba7368e34ed6cb57f0f175e414aeb65f2409ae9d24f",
+      "return": "INDEPENDENT_ASSESSOR_REQUIRED",
+      "state_after": "{\"assessor\": \"\", \"attestation_id\": \"\", \"bundle_id\": \"0\", \"commit\": \"d083ec1da1e5252abd3ddfdde6dfbc09701a2c51\", \"fingerprint\": \"a6fb00abba0def12b3aa2db24a9f836f0932a194d63ac5d158c0dee0233a1319\", \"manifest_sha256\": \"c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7\", \"outcome\": \"UNASSESSED\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [], \"status\": \"REGISTERED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-live\"}",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "H2-independent-assess",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_bundle",
+      "hash": "0xa1babcbb9aa08c1d071d093dfdd7b46199b23e454e4296e0cf5c069b1e877291",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xa1babcbb9aa08c1d071d093dfdd7b46199b23e454e4296e0cf5c069b1e877291",
+      "return": "DISCLOSURE_COMPLETE",
+      "state_after": "{\"assessor\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"attestation_id\": \"efc0c85161449c3d9cdf5a8928cf887fdfd390a2a90c6f9c8c47758c22973c73\", \"bundle_id\": \"0\", \"commit\": \"d083ec1da1e5252abd3ddfdde6dfbc09701a2c51\", \"fingerprint\": \"a6fb00abba0def12b3aa2db24a9f836f0932a194d63ac5d158c0dee0233a1319\", \"manifest_sha256\": \"c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7\", \"outcome\": \"DISCLOSURE_COMPLETE\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [\"PRESENT\", \"PRESENT\", \"PRESENT\"], \"status\": \"ATTESTED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-live\"}",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "F4-replay",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_bundle",
+      "hash": "0x893ddc92f609d3b77324ea9731ecee73e6754d12a9e90ec55b666050fd2339e9",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x893ddc92f609d3b77324ea9731ecee73e6754d12a9e90ec55b666050fd2339e9",
+      "return": "BUNDLE_NOT_ASSESSABLE",
+      "state_after": "{\"assessor\": \"0xA63DE24e30C88FB1019E8956654730316e36eDBE\", \"attestation_id\": \"efc0c85161449c3d9cdf5a8928cf887fdfd390a2a90c6f9c8c47758c22973c73\", \"bundle_id\": \"0\", \"commit\": \"d083ec1da1e5252abd3ddfdde6dfbc09701a2c51\", \"fingerprint\": \"a6fb00abba0def12b3aa2db24a9f836f0932a194d63ac5d158c0dee0233a1319\", \"manifest_sha256\": \"c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7\", \"outcome\": \"DISCLOSURE_COMPLETE\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [\"PRESENT\", \"PRESENT\", \"PRESENT\"], \"status\": \"ATTESTED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-live\"}",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "I1-register-wrong-digest",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "register_bundle",
+      "hash": "0xced8005132d15cf1d2deda5eaa3fd4123ec8c04472179c397012908098d0dc1d",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xced8005132d15cf1d2deda5eaa3fd4123ec8c04472179c397012908098d0dc1d",
+      "return": "1",
+      "state_after": "{\"assessor\": \"\", \"attestation_id\": \"\", \"bundle_id\": \"1\", \"commit\": \"d083ec1da1e5252abd3ddfdde6dfbc09701a2c51\", \"fingerprint\": \"236d7f84ab217c6af2f8ee6c6c628556ea2b8fb923949c4eb7774484b71343e2\", \"manifest_sha256\": \"c824af55808a5b38a86d0048bc8399b666046bf81add8c315a48ed161de66bbd\", \"outcome\": \"UNASSESSED\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [], \"status\": \"REGISTERED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-wrong\"}",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "I2-assess-wrong-digest",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_bundle",
+      "hash": "0xce53c09c08d245e66d9d8679b9a4e573269bfe84c12fc8099abe7a5067000a15",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0xce53c09c08d245e66d9d8679b9a4e573269bfe84c12fc8099abe7a5067000a15",
+      "return": "INTEGRITY_FAILURE",
+      "state_after": "{\"assessor\": \"\", \"attestation_id\": \"\", \"bundle_id\": \"1\", \"commit\": \"d083ec1da1e5252abd3ddfdde6dfbc09701a2c51\", \"fingerprint\": \"236d7f84ab217c6af2f8ee6c6c628556ea2b8fb923949c4eb7774484b71343e2\", \"manifest_sha256\": \"c824af55808a5b38a86d0048bc8399b666046bf81add8c315a48ed161de66bbd\", \"outcome\": \"UNASSESSED\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [], \"status\": \"REGISTERED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-wrong\"}",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "R1-register-unavailable",
+      "actor": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "method": "register_bundle",
+      "hash": "0x3844968d1c35416bbc336c6ab8e43bbbfc11456bb9a2f89fcc62c8d297bab12a",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x3844968d1c35416bbc336c6ab8e43bbbfc11456bb9a2f89fcc62c8d297bab12a",
+      "return": "2",
+      "state_after": "{\"assessor\": \"\", \"attestation_id\": \"\", \"bundle_id\": \"2\", \"commit\": \"ffffffffffffffffffffffffffffffffffffffff\", \"fingerprint\": \"10c2c202785568c0ad871edc2501a1bc0ec79a58ad778942e7658ece8204809c\", \"manifest_sha256\": \"c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7\", \"outcome\": \"UNASSESSED\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [], \"status\": \"REGISTERED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-missing\"}",
+      "status": "READBACK_VERIFIED"
+    },
+    {
+      "id": "R2-assess-unavailable",
+      "actor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "method": "assess_bundle",
+      "hash": "0x19290ae3e55a50ea0ddddf1fddde11321e4499d89dd718c8870457ae8d3e47b2",
+      "explorer": "https://explorer-studio.genlayer.com/tx/0x19290ae3e55a50ea0ddddf1fddde11321e4499d89dd718c8870457ae8d3e47b2",
+      "return": "SOURCE_RETRYABLE",
+      "state_after": "{\"assessor\": \"\", \"attestation_id\": \"\", \"bundle_id\": \"2\", \"commit\": \"ffffffffffffffffffffffffffffffffffffffff\", \"fingerprint\": \"10c2c202785568c0ad871edc2501a1bc0ec79a58ad778942e7658ece8204809c\", \"manifest_sha256\": \"c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7\", \"outcome\": \"UNASSESSED\", \"policy\": \"RELEASE_DISCLOSURE_V1\", \"repository\": \"facebook/react\", \"results\": [], \"status\": \"REGISTERED\", \"submitter\": \"0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB\", \"tag\": \"v-missing\"}",
+      "status": "READBACK_VERIFIED"
+    }
+  ],
+  "complete": true,
+  "final": {
+    "happy": {
+      "assessor": "0xA63DE24e30C88FB1019E8956654730316e36eDBE",
+      "attestation_id": "efc0c85161449c3d9cdf5a8928cf887fdfd390a2a90c6f9c8c47758c22973c73",
+      "bundle_id": "0",
+      "commit": "d083ec1da1e5252abd3ddfdde6dfbc09701a2c51",
+      "fingerprint": "a6fb00abba0def12b3aa2db24a9f836f0932a194d63ac5d158c0dee0233a1319",
+      "manifest_sha256": "c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7",
+      "outcome": "DISCLOSURE_COMPLETE",
+      "policy": "RELEASE_DISCLOSURE_V1",
+      "repository": "facebook/react",
+      "results": [
+        "PRESENT",
+        "PRESENT",
+        "PRESENT"
+      ],
+      "status": "ATTESTED",
+      "submitter": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "tag": "v-live"
+    },
+    "wrong_digest": {
+      "assessor": "",
+      "attestation_id": "",
+      "bundle_id": "1",
+      "commit": "d083ec1da1e5252abd3ddfdde6dfbc09701a2c51",
+      "fingerprint": "236d7f84ab217c6af2f8ee6c6c628556ea2b8fb923949c4eb7774484b71343e2",
+      "manifest_sha256": "c824af55808a5b38a86d0048bc8399b666046bf81add8c315a48ed161de66bbd",
+      "outcome": "UNASSESSED",
+      "policy": "RELEASE_DISCLOSURE_V1",
+      "repository": "facebook/react",
+      "results": [],
+      "status": "REGISTERED",
+      "submitter": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "tag": "v-wrong"
+    },
+    "source_unavailable": {
+      "assessor": "",
+      "attestation_id": "",
+      "bundle_id": "2",
+      "commit": "ffffffffffffffffffffffffffffffffffffffff",
+      "fingerprint": "10c2c202785568c0ad871edc2501a1bc0ec79a58ad778942e7658ece8204809c",
+      "manifest_sha256": "c53ce73f87d684199180197af96b15836c5248ffd439c81b8583ee85e057a8f7",
+      "outcome": "UNASSESSED",
+      "policy": "RELEASE_DISCLOSURE_V1",
+      "repository": "facebook/react",
+      "results": [],
+      "status": "REGISTERED",
+      "submitter": "0x736A168247e3f0C52F7907c9a8fDac572DF9c8bB",
+      "tag": "v-missing"
+    }
+  },
+  "completed_at": "2026-09-25T08:14:10.359444+00:00"
+}
